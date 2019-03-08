@@ -1,0 +1,655 @@
+::-webkit-scrollbar {
+	width: 15px;
+	height: 20px;
+	-webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #F7F7F7;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+@font-face {
+	font-family:"source-code-pro";
+	src:url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;font-weight:700;
+}
+@font-face {
+	font-family:"source-code-pro";
+	src:url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"source-code-pro";
+	src:url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-style:italic;font-weight:700;
+	}
+	
+	@font-face {
+	font-family:"source-code-pro";
+	src:url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-style:italic;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"usual";
+	src:url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"usual";
+	src:url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+	font-style:normal;font-weight:600;
+	}
+	
+	@font-face {
+	font-family:"usual";
+	src:url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+	font-style:normal;font-weight:300;
+	}
+	
+	@font-face {
+	font-family:"usual";
+	src:url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+	font-style:normal;font-weight:800;
+	}
+	
+	@font-face {
+	font-family:"usual";
+	src:url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;font-weight:700;
+	}
+	
+	@font-face {
+	font-family:"ministry";
+	src:url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-style:italic;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"ministry";
+	src:url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;font-weight:700;
+	}
+	
+	@font-face {
+	font-family:"ministry";
+	src:url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"ministry";
+	src:url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-style:italic;font-weight:700;
+	}
+	
+	@font-face {
+	font-family:"variex";
+	src:url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;font-weight:400;
+	}
+	
+	@font-face {
+	font-family:"variex";
+	src:url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;font-weight:700;
+	}
+@import url("https://p.typekit.net/p.css?s=1&k=mxx4rel&ht=tk&f=17451.17454.25775.25777.25629.25631.25633.25636.25638.27895.27898.27930.27961.28560.28561&a=5318639&app=typekit&e=css");
+*,
+*:after,
+*:before{
+margin: 0; 
+padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #F7F7F7;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*>>>>>>>>>>>>>>>>>>> home >>>>>>>>>>>>>>>>>>>
+*/
+.containerLogo__home{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("./Assets/Home-Capa.jpg") no-repeat center fixed;
+	background-size: cover;
+	height: 90vh ;
+}
+.containerLogo__title{
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+	width: 550px;
+	padding: 1rem 1.5rem;
+	background: #fff;
+}
+.logoHome__title{
+	width: 100%;
+	color: #000;
+	font-size: 2.25rem;
+	font-weight: 700;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+}
+.logoHome__titleMobile{
+	display: none;
+
+}
+
+@media(max-width: 980px){
+	.logoHome__titleMobile{
+			display: block;
+			padding: 10px;
+	}
+	.logoHome__title{
+			display: none;
+	}
+	.containerLogo__home{
+			background: url("./Assets/Home-Capa.jpg") no-repeat center;
+	}
+}
+@media(max-width: 425px){
+	.logoHome__titleMobile{
+			display: block;
+			margin-left: 36%;
+			width: 42%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> menu > home >>>>>>>>>>>>>>>>>>>
+*/
+.navBar__home{
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F7F7F7;
+	width: 100%;
+	height: 10vh;
+	padding: 0 5rem;
+	z-index: 999;
+}
+.navBar__Menu a{
+	font-family:"source-code-pro";
+	text-decoration: none;
+	color: #000000;
+	width: 100%;
+	margin: 20px;
+}
+.navBar__Menu a:hover{
+	font-weight: 900;
+	border-bottom:  solid #FF611E 2px;
+}
+.navBar__homeLogo{
+	width: 100px;
+}
+@media(max-width: 768px){
+	.navBar__home{
+			display: none;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > um novo jogo >>>>>>>>>>>>>>>>>>>
+*/
+.contPrimeiro__novoJogo{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #00145D;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+	text-align: left;
+	padding: 10%;  
+}
+.novoJogo__title{
+	width: 84%;
+	margin-bottom: 2rem; 
+	font-size: 3em;
+	font-weight: 700;
+	color: #FFAC2D;
+}
+.contNovoJogo__parag{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.novoJogo__parag{
+	font-size: 20px;
+	line-height: 2;
+	color: #fff;
+	width: 72%;
+	padding: 1%;
+}
+@media(max-width: 980px){
+	.novoJogo__title{
+			font-size: 2em;
+			margin-right: 13%;
+	}
+	.novoJogo__parag{
+			width: 100%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo primario >>>>>>>>>>>>>>>>>>>
+*/
+.contPrimeiro__profissionais{
+	display: flex;
+	align-items: flex-end;
+	background: url("./Assets/Home-Anna.jpg") no-repeat center fixed;
+	background-size: cover;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+	height: 91vh;
+	padding-left: 5rem;
+	padding-bottom: 4rem;
+}
+.profissionais_cont{
+}
+.profissionais__text{
+	width: 690px;
+	margin-left: 1.5rem;
+	font-size: 40px;
+	font-weight: 900;
+	color:#fff;
+
+}
+.profissionais__alter{
+	font-weight: 100;
+}
+
+.contProfissionais__text{
+	background-color:#F7F7F7;
+	width: 514px;
+	padding: 1.5rem;
+	margin-top: 24px;
+	line-height: 1.8;
+}
+.text_alter{
+	line-height: 1.8;
+}
+.profissionaisImg__mobile{
+	display: none;
+}
+.profissionais_cont_mobile{
+	display: none;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+}
+@media(max-width: 980px){
+	.profissionaisImg__mobile{
+			display: block;
+			width: 100%;
+	}
+	.profissionais_cont_mobile{
+			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+	}
+	.contPrimeiro__profissionais{
+			display: none;
+	}
+	.profissionais_cont{
+			display: none;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo secudario trabalho incluisivo >>>>>>>>>>>>>>>>>>>
+*/
+.conteudosPrincipais__trabalho{
+	padding-top: 13rem;
+	background-color: #F7F7F7;
+}
+.contForca__trabalho{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+}
+.diversiade__title{
+	margin-bottom: 4rem;
+	margin-left: 15%;
+	font-family: "usual",sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	text-align: left;
+}
+.contTrabalho__text{
+	width: 190px;
+	margin-right: 7%;
+	line-height: 1.7;
+	z-index: 1;
+}
+.trbabalhoPorcento{
+	margin: 0;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+	font-size: 59px;
+	font-weight: 900;
+	color:#FF611E;
+}
+.trabalhoprag{
+	font-family: "usual",sans-serif;
+	font-style:normal;
+	font-size: 14px;
+}
+.trabalhoPrag__font{
+	font-weight: 900;
+}
+.trabalhoprag__edit{
+	font-size: 12px;
+	font-family:"source-code-pro";
+	color:#909090; 
+}
+.diversidade__img{
+	position: absolute;
+	width: 17%;
+	left: 34%;
+	top: -5%;
+}
+.contTrabalho__inclusivo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+}
+.trabalhoInclusivo__img{
+	width: 100%;
+}
+
+@media(max-width: 768px){
+	.contTrabalho__text{
+			left: 0;
+			top: 0;
+	}
+	.conteudosPrincipais__secundario{
+			display: none;
+	}
+	.conteudosPrincipais__trabalho{
+			flex-direction: column-reverse;
+	}
+	.diversidade__img{
+			width: 25%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  terciario global goals >>>>>>>>>>>>>>>>>>>
+*/
+.contGlobal__goals{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("./Assets/Mapa-Global_Goals.svg") no-repeat center ;
+	background-size: contain;
+	height: 100vh;
+	margin: 10%;
+}
+.contglobalgoals__text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 17px;
+}
+.globalGoals__title{
+	font-size: 65px;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+	color: #0F2B92;
+	text-align: center;
+}
+hr{
+	background-color:#FFAC2D;
+	padding: 6px 25%;
+	margin: 1%;
+	border:none; 
+} 
+.globalGoals__parag{
+	font-family: "usual",sans-serif;
+	font-style: normal;
+	width: 38%;
+	margin: 2%;
+	line-height: 1.7;
+}
+.color{
+	color: #626262;
+}
+.goalsImg{
+	width: 100%;
+}
+.mobile{
+	display: none;
+}
+@media(max-width:768px){
+	.contGlobal__goals{
+			background-position:top;
+			height: 160vh;
+	}
+	.globalGoals__parag{
+			width: 272px;
+	}
+	hr{
+			padding: 6px 50%;
+	}
+	.color{
+			color:#FF611E;
+	}
+	.goalsImg{
+			display: none;
+	}
+	.mobile{
+			display: block;
+			width: 100%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  Organisation >>>>>>>>>>>>>>>>>>>
+*/
+.contOrganization{
+	display: flex;
+	justify-content: center;
+}
+.contOrganization__corporate{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 30%;
+	font-style:normal;
+}
+.contOrganization__social{
+	display: flex;
+	align-items: flex-start;    
+	flex-direction: column;
+	width: 30%;
+	margin-left: 2.5rem;
+	font-family: "usual",sans-serif;
+	font-style:normal;
+}
+.contOrganization__title{
+	width: 100%;
+	margin-bottom: 2rem;
+	font-family: "usual",sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	text-align: center;
+}
+.organizationCorporate__img{
+	width: 100%;
+}
+.button{
+	margin: -2rem;
+	background: #00145D;
+	border: solid 2px #00145D;
+	border-radius: 10px;
+	padding:  1rem 1.5rem;
+	font-family:"source-code-pro";
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.contOrganization p{
+	position: relative;
+	background: #ffff;
+	padding: 3%;  
+	top:-10%;
+	line-height: 1.7;
+}
+.organizationCorporate__parag{
+	width: 110%;
+	left: -6%;
+	font-family: "usual",sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+.organizationSocial__parag{
+	width: 95%;
+	left: 17%;
+	font-family: "usual",sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+.button:hover{
+	border: solid 2px #FFAC2D;
+	color: #FFAC2D;
+}
+@media(max-width:768px){
+	.contOrganization__corporate h1{
+			position:none;
+			display: flex;
+			order: 1; 
+	}
+	button{
+			order: 1;
+			margin: 0;
+	} 
+	.organizationCorporate__parag{
+			order: 1;
+	}
+
+	.contOrganization__social h1{
+			position:none;
+			display: flex;
+			order: 1; 
+	}
+	button{
+			order: 1;
+			margin: 0;
+	} 
+	.organizationSocial__parag{
+			order: 1;
+	}
+
+	.organizationCorporate__img{
+			width: 100%;
+	}
+	.organizationCorporate__img{
+			width: 100%;
+	}
+	.contOrganization{
+			flex-direction: column;
+	}
+	.contOrganization__corporate{
+			width: 100%;
+			margin: 0;
+	}
+	.contOrganization__social{
+			width: 100%;
+			margin: 0;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> Footer > roda pé >>>>>>>>>>>>>>>>>>>
+*/
+.rodape{
+	background-color: #00145D;
+	color: #fff;
+	margin-top: 15%;
+	padding-bottom: 4rem;
+}
+.rodapeImg{
+	position: relative;
+	top: -24px;
+	left: 99px;
+	width: 100px;
+}
+.contRodape__text{
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+	font-style:normal;
+	font-family:"source-code-pro";
+	line-height: 1.7;
+}
+.rodape_section{
+	width: 15%;
+}
+
+.rodape_section1{
+	width: 30%;
+}
+
+.rodape__Menu{
+	display: flex;
+	flex-direction: column;
+}
+.rodape__Menu-item{
+	font-size: 14px;
+	font-style:normal;
+	font-family:"source-code-pro";
+	line-height: 1.7;
+	color: #fff;
+	text-decoration: none;
+}
+.rodapeIcon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+}
+.ropapeIconLink{
+	height: 40px;
+}
+@media(max-width:768px){
+	.rodapeIcon {
+			flex-direction: column;
+	}
+	.contOrganization__corporate{
+			width: 100%;
+	}
+	.contRodape__text{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 11px;
+			font-size: 20px;
+		
+	}
+	footer .contRodape__text p:nth-child(1){
+			width: 80%;
+	}
+	footer .contRodape__text p:nth-child(2){
+			width: 40%;
+	}
+	footer .contRodape__text p:nth-child(3){
+			width: 13%;
+	}
+}

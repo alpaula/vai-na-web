@@ -1,0 +1,539 @@
+::-webkit-scrollbar {
+    width: 15px;
+    height: 20px;
+    -webkit-border-radius: 16px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #F7F7F7;
+    -webkit-border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #0F2B92;
+    -webkit-border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #0F2B92;
+    -webkit-border-radius: 3px;
+  }
+  @font-face {
+    font-family:"source-code-pro";
+    src:url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/756772/0000000000000000000179d5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style:normal;font-weight:700;
+ }
+ @font-face {
+    font-family:"source-code-pro";
+    src:url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3c21b3/0000000000000000000179cf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style:normal;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"source-code-pro";
+    src:url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/fb9aba/0000000000000000000179d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+    font-style:italic;font-weight:700;
+    }
+    
+    @font-face {
+    font-family:"source-code-pro";
+    src:url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/d090fb/0000000000000000000179d0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-style:italic;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"usual";
+    src:url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4e8f1c/00000000000000000001771b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style:normal;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"usual";
+    src:url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/393a58/00000000000000000001771d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+    font-style:normal;font-weight:600;
+    }
+    
+    @font-face {
+    font-family:"usual";
+    src:url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/8d84f0/00000000000000000001771f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+    font-style:normal;font-weight:300;
+    }
+    
+    @font-face {
+    font-family:"usual";
+    src:url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/8efdc5/000000000000000000017722/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+    font-style:normal;font-weight:800;
+    }
+    
+    @font-face {
+    font-family:"usual";
+    src:url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/625a3c/000000000000000000017724/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style:normal;font-weight:700;
+    }
+    
+    @font-face {
+    font-family:"ministry";
+    src:url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/70cd76/00000000000000003b9b14a6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-style:italic;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"ministry";
+    src:url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/864471/00000000000000003b9b14a1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style:normal;font-weight:700;
+    }
+    
+    @font-face {
+    font-family:"ministry";
+    src:url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/cf382f/00000000000000003b9b14a5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style:normal;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"ministry";
+    src:url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/8c0397/00000000000000003b9b14a2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+    font-style:italic;font-weight:700;
+    }
+    
+    @font-face {
+    font-family:"variex";
+    src:url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d6c303/00000000000000003b9adc59/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style:normal;font-weight:400;
+    }
+    
+    @font-face {
+    font-family:"variex";
+    src:url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/6efff6/00000000000000003b9adc5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style:normal;font-weight:700;
+    }
+@import url("https://p.typekit.net/p.css?s=1&k=mxx4rel&ht=tk&f=17451.17454.25775.25777.25629.25631.25633.25636.25638.27895.27898.27930.27961.28560.28561&a=5318639&app=typekit&e=css");
+*,
+*:after,
+*:before{
+	margin: 0; 
+	padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F7F7F7;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*>>>>>>>>>>>>>>>>>>> Home  EdTech >>>>>>>>>>>>>>>>>>>
+*/
+.containerLogo__edtech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./Assets/Corporate-Capa.jpg") no-repeat center fixed ;
+    background-size: cover;
+    height: 100vh ;
+}
+.logoEdtech__title{
+    color: #fff;
+    font-size: 5em;
+    font-weight: 700;
+    font-family: "usual",sans-serif;
+    font-style:normal;
+    text-align: center;
+    margin-top: 26%;
+}
+/*>>>>>>>>>>>>>>>>>>> Menu > Home Edtech  >>>>>>>>>>>>>>>>>>>
+*/
+.navBar__home{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F7F7;
+    width: 100%;
+    padding: 30px 7%;
+    z-index: 999;
+}
+.navBar__Menu a{
+    font-family:"source-code-pro";
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    margin: 20px;
+}
+.navBar__Menu a:hover{
+    font-weight: 900;
+    border-bottom:  solid #FF611E 2px;
+}
+.navBar__homeLogo{
+    position: absolute;
+    top:5px;
+    width: 100px;
+    
+}
+@media(max-width: 768px){
+    .navBar__home{
+        display: none;
+    }
+}
+
+/*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech Mudança >>>>>>>>>>>>>>>>>>>
+*/
+.contCorporate__mudanca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10%;
+}
+.contCorporate__mudanca div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contCorporate__mudanca h1:nth-child(1){
+    color: #0F2B92;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "usual",sans-serif;
+    font-style:normal;
+}
+.contCorporate__mudanca p{
+    position: relative;
+    left: 8.5%;
+    background: #fff;
+    font-size: 1.2em;
+    font-family: "usual","regular";
+    font-style: normal;
+    width: 80%;
+    border-left: solid #0F2B92 10px;
+    margin: 2%;
+    padding: 7% 9% 7%;
+    line-height: 2;
+    z-index: 1;
+}
+.contCorporate__mudanca div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.contCorporate__mudanca  div:nth-child(2) img{
+    width: 100%;
+    margin-right: 50%;
+}
+/*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech  Abordagem >>>>>>>>>>>>>>>>>>>
+*/
+.contCorporate__abordagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contCorporate__abordagem h1:nth-child(1){
+    font-size: 2.5em;
+    margin-right: -59%;
+    margin: 8%;
+    position: relative;
+    right: 12%;
+}
+.contCorporate__abordagem h1{
+    font-size: 1.2em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+}
+.ocultar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+    font-size:14px; 
+    color: #000; 
+    background: #FFAC2D;
+    width: 50%; 
+    height: 20vh;
+    padding: 2% 3% 3%;
+    margin: 1%;
+}
+.ocultar img{
+    width: 15%;
+}
+.mostrar {
+    background: #f9d0bf ;
+    padding: 4% 10% 4%;
+    width: 50%;
+    margin-top: -1%;
+    line-height: 1.5;
+}
+.arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    position: relative;
+    margin: 0 1rem;
+  }
+  .arrow span {
+    top: 0.5rem;
+    position: absolute;
+    width: 0.75rem;
+    height: 0.1rem;
+    background-color: #000;
+    display: inline-block;
+  }
+  
+  .arrow span:first-of-type {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .arrow span:last-of-type {
+    right: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .arrow.active span:first-of-type {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .arrow.active span:last-of-type {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+ /*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech  o Programa >>>>>>>>>>>>>>>>>>>
+*/ 
+
+.contCorporate__programa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+}
+.pipeline{
+    display: flex;
+    background: #f7efe1;
+    padding: 13% 9% 13%;
+    margin: 10%;
+}
+.pipeline p{
+    color: #0F2B92;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+}
+.pipeline h1{
+    color: #0F2B92;
+}
+.contCorporate__programa h1:nth-child(1){
+    font-size: 2em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+}
+.contVision{
+    position: relative;
+    top: 22px;
+}
+.vision{
+    position: relative;
+    right: 19%;
+
+}
+.contWorkforce{
+    position: relative;
+    left: 37px;
+    top: 29px;
+}
+
+.paragWorkforce{
+    width: 158%;
+    position: relative;
+    left: -20px;
+    top: 34px;
+}
+.visionParag{
+    position: relative;
+    bottom: -20%;
+}
+.contSetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contSetas h1{
+    position: relative;
+    top: -73px;
+}
+.contSetas p{
+    position: relative;
+    bottom: -58px;
+}
+.setas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech  Visionário >>>>>>>>>>>>>>>>>>>
+*/
+.visionario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titleVisionario{
+    font-size: 2.5em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+    margin-right:28%;
+    position: relative;
+    top: -128px;
+}
+.pargVisionario{
+    position: relative;
+    left: 25%;
+    top: 193px;
+    line-height: 1.7;
+    width: 18%;
+    font-size: 1.2em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+.contVisionario{
+    width: 100%;
+    background: #00145D;
+}
+.visionarioImg{
+    position: relative;
+    top: -100px;
+    left: 30%;
+    width: 70%;
+}
+.visionarioSeta{
+    position: relative;
+    right: 38%;
+    top: 40px;
+}
+/*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech  Jornada >>>>>>>>>>>>>>>>>>>
+*/
+.jornada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background: url("./Assets/Coporate-Jornada.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh ;
+   
+}
+.jornada h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+    margin-left: 48%;
+    
+}
+.jornada p{
+    position: relative;
+    background: #ffff;
+    width: 32%;
+    padding: 1%;  
+    line-height: 1.7;
+    font-size: 1em;
+    font-family: "usual",sans-serif;
+    font-style: normal;
+    margin: 2%;
+    margin-left: 60%;
+}
+button{
+    background: #00145D;
+    border: none;
+    border-radius: 10px;
+    padding:  15px 15px 15px;
+    color: #fff;
+    margin-left: 35%;
+}
+button:hover{
+    border: solid 2px #FFAC2D;
+    color: #FFAC2D;
+}
+/*>>>>>>>>>>>>>>>>>>> Footer > roda pé  EdTech >>>>>>>>>>>>>>>>>>>
+*/
+.rodape{
+    background-color: #00145D;
+    color: #fff;
+}
+.rodapeImg{
+    position: relative;
+    top: -24px;
+    left: 99px;
+    width: 100px;
+}
+.contRodape__text{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-style:normal;
+    font-family:"source-code-pro";
+    line-height: 1.7;
+}
+.rodape_section{
+	width: 15%;
+}
+
+.rodape_section1{
+	width: 30%;
+}
+
+.rodape__Menu{
+	display: flex;
+	flex-direction: column;
+}
+.rodape__Menu-item{
+	font-size: 14px;
+	font-style:normal;
+	font-family:"source-code-pro";
+	line-height: 1.7;
+	color: #fff;
+	text-decoration: none;
+}
+.rodapeIcon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+}
+.ropapeIconLink{
+	height: 40px;
+}
+@media(max-width:768px){
+    .rodapeIcon {
+        flex-direction: column;
+    }
+    .contOrganization__corporate{
+        width: 100%;
+    }
+    .contRodape__text{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 11px;
+        font-size: 20px;
+
+    }
+    footer .contRodape__text p:nth-child(1){
+        width: 80%;
+    }
+    footer .contRodape__text p:nth-child(2){
+        width: 40%;
+    }
+    footer .contRodape__text p:nth-child(3){
+        width: 13%;
+    }
+ }
