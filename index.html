@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./Assets/Logo-VnW.png">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./fonts.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Vai na Web</title>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -13,6 +14,7 @@
 
 <body id="4ri">
 	<header>
+		<img src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="header__logoMobile" />
 		<div id="logo" class="containerLogo__home">
 			<div class="containerLogo__title">
 				<h1 class="logoHome__title">
@@ -27,7 +29,7 @@
 			<a href="#4ri">4RI</a>
 			<a href="./corporateEdTech.html">EdTech</a>
 			<a href="./socialEdTech.html">SocialTech</a>
-			<a href="">Contato</a>
+			<a href="#contact">Contato</a>
 			<a href="./En/indexEn.html">English</a>
 		</ul>
 	</nav>
@@ -61,7 +63,7 @@
 					</p>
 				</div>
 			</div>
-			<img src="./Assets/Home-Evelyn.jpg" alt="" class="profissionaisImg__mobile" />
+			<img src="./Assets/Home-Anna.jpg" alt="" class="profissionaisImg__mobile" />
 			<div class="profissionais_cont_mobile">
 				<p class="profissionais__text_mobile">
 					Os profissionais da nova indústria não estão prontos <span class="profissionais__alter_mobile">(ainda)</span>
@@ -69,10 +71,7 @@
 				<p class="contProfissionais__text_mobile">
 					Desenhamos e conduzimos jornadas de qualificação digital avançada, inclusiva, confiável e sustentável.
 					<br><br>
-					<span class="text_alter_mobile">
-						As empresas devem liderar o desenvolvimento de uma nova força de trabalho na qual pessoas e máquinas
-						inteligentes trabalhem juntos para ampliar a produtividade, a inovação e o uso eficiente de recursos.
-					</span>
+					As empresas devem liderar o desenvolvimento de uma nova força de trabalho na qual pessoas e máquinas inteligentes trabalhem juntos para ampliar a produtividade, a inovação e o uso eficiente de recursos.
 				</p>
 			</div>
 		</section>
@@ -82,7 +81,10 @@
 			</h1>
 			<div class="contForca__trabalho">
 				<div class="contTrabalho__text">
-					<h1 class="trbabalhoPorcento" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">33%</h1>
+					<img src="./Assets//Icone-Diversidade.svg" alt="" class="diversidade__img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" />
+					<h1 class="trbabalhoPorcento" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+						33%
+					</h1>
 					<p class="trabalhoprag" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
 						Equipes executivas têm 33% mais chances de crescer a rentabilidade investindo em <span
 							class="trabalhoPrag__font">diversidade cultural e étnica.</span>
@@ -94,8 +96,9 @@
 					</p>
 					<p class="trabalhoprag__edit">World Economic Forum</p>
 				</div>
-				<img src="./Assets//Icone-Diversidade.svg" alt="" class="diversidade__img" data-aos="fade-down"
-					data-aos-easing="linear" data-aos-duration="1000" />
+				<h1 class="diversiade__title-mobile" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+					Força de trabalho inclusiva e qualificada <br> traz oportunidades e abundância
+				</h1>
 				<div class="contTrabalho__inclusivo">
 					<img src="./Assets/Home-Trabalho_inclusivo.jpg" alt="" class="trabalhoInclusivo__img">
 				</div>
@@ -129,7 +132,7 @@
 					O nosso programa promove o pensamento digital, permitindo que os profissionais estejam preparados para as
 					rápidas mudanças do mercado e sejam capazes de liderarem ações em novos cenários.
 				</p>
-				<a class="button" href="./corporateEdTech.html" style="margin-right: 6%;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="button" href="./corporateEdTech.html" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
 					DESENVOLVA NA SUA ORGANIZAÇÃO
 				</a>
 			</div>
@@ -141,18 +144,18 @@
 					de conflito no Rio de Janeiro, prosperarem. Centenas de vidas e carreiras já foram potencializadas com o Vai
 					na Web Social Tech, que tem como propósito tornar a tecnologia acessível e inclusiva.
 				</p>
-				<a class="button" href="./socialEdTech.html" style="margin-left: 17%" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="button button-social" href="./socialEdTech.html" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
 					CONHEÇA A NOSSA HISTÓRIA
 				</a>
 			</div>
 		</section>
 	</main>
-	<footer class="rodape">
+	<footer id="contact" class="rodape">
 		<img src="./Assets/logo_VnW.svg" alt="" class="rodapeImg" data-aos="fade" data-aos-easing="linear"
 			data-aos-duration="1000" />
 		<div class="contRodape__text">
 			<section class="rodape_section rodape_section1">
-				<p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<p class="rodape-text" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
 					O Vai na Web é um movimento de alta tecnologia e impacto social que amplia as capacidades humanas e
 					requalifica a força de trabalho para encarar os desafios da Indústria 4.0
 				</p>
@@ -162,7 +165,6 @@
 					<a class="rodape__Menu-item" href="#4ri">4ª Revolução Industrial</a>
 					<a class="rodape__Menu-item" href="./corporateEdTech.html">Corporate EdTech</a>
 					<a class="rodape__Menu-item" href="./socialEdTech.html">Social EdTech</a>
-					<a class="rodape__Menu-item" href="#">Contato</a>
 				</ul>
 				<ul class="rodapeIcon">
 					<a class="ropapeIconLink" href="https://www.facebook.com/vainaweb/" target="_blank">
@@ -171,16 +173,16 @@
 					<a class="ropapeIconLink" href="https://www.instagram.com/vainaweb/" target="_blank">
 						<img src="./Assets/Icone-Instagram.svg" alt="">
 					</a>
-					<a class="ropapeIconLink" href="#" target="_blank">
+					<!-- <a class="ropapeIconLink" href="#" target="_blank">
 						<img src="./Assets/Icone-Youtube.svg" alt="">
-					</a>
+					</a> -->
 				</ul>
 			</section>
-			<section class="rodape_section">
+			<section class="rodape_section section3">
 				<a class="rodape__Menu-item" href="mailto:ola@vainaweb.com.br">
 					ola@vainaweb.com.br
 				</a>
-				<p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<p class="rodape-text contact">
 					+55 21 xxxxx-xxxx
 				</p>
 			</section>
