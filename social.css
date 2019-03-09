@@ -37,17 +37,40 @@ html{
 .containerLogo__edtech{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	background: url("./Assets/Social-Capa.jpg") no-repeat center fixed ;
 	background-size: cover;
 	height: 90vh;
+}
+.header__logoMobile{
+	position: absolute;
+	display: none;
+	top: 1rem;
+	left: 1rem;
+	z-index: 3;
 }
 .logoEdtech__title{
 	color: #fff;
 	font-size: 7.5rem;
 	font-family: "usualBold",sans-serif;
-	text-align: center;
-	margin-top: 26%;
+	margin-bottom: 3rem;
+}
+@media(max-width: 768px){
+	.header__logoMobile{
+		display: block;
+	}
+	.logoEdtech__title{
+		width: 80%;
+		margin-left: 3rem;
+		font-size: 3.5rem;
+	}
+}
+@media(max-width: 450px){
+	.containerLogo__edtech{
+		justify-content: flex-start;
+		background: url("./Assets/Social-Capa_mobile.jpg") no-repeat center;
+		background-size: 100%
+	}
 }
 /*>>>>>>>>>>>>>>>>>>> Menu > Home Social  >>>>>>>>>>>>>>>>>>>*/
 .navBar__home{
@@ -103,6 +126,20 @@ html{
 	line-height: 2;
 	z-index: 1;
 }
+@media(max-width: 768px){
+	.contCorporate__mudanca{
+		margin-bottom: 3rem;
+	}
+	.contCorporate__mudanca-title{
+		font-size: 2.25rem;
+	}
+	.contCorporate__mudanca-parag{
+		position: static;
+		width: 100%;
+		padding: 2rem;
+		font-size: 1rem;
+	}
+}
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo  Social  >>>>>>>>>>>>>>>>>>>*/
 .contSocial__img{
 	width: 90%;
@@ -115,7 +152,19 @@ html{
 	color: #626262;
 	margin: 1rem 5%;
 }
-
+@media(max-width: 768px){
+	.contSocial__img{
+		width: 100%;
+		margin: 0;
+		margin-top: 3rem;
+	}
+	.paragEstudio{
+		font-size: .85rem;
+		font-family: "usualLight", sans-serif;
+		color: #626262;
+		margin: 1rem 5%;
+	}
+}
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo Information  >>>>>>>>>>>>>>>>>>>*/
 .contSocial__information{
 	display: flex;
@@ -139,6 +188,19 @@ html{
 	line-height: 1.8;
 	font-size: 1.25rem;
 	font-family: "usualRegular",sans-serif;
+}
+@media(max-width: 768px){
+	.contSocial__information{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10%;
+	}
+	.contSocial__information-container{
+		width: 65%;
+		margin-bottom: 2rem;
+		padding: 2rem 0;
+	}
 }
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo  Social obama  >>>>>>>>>>>>>>>>>>>*/
 .contSocial__Obama{
@@ -172,6 +234,31 @@ html{
 	font-size: 1.05rem;
 	font-family:"sourceRegular", sans-serif;
 	color:#626262; 
+}
+@media(max-width: 768px){
+	.contSocial__Obama{
+		flex-direction: column;
+		height: auto;
+		overflow: hidden;
+	}
+	.contSocial__Obama-img{
+		width: 100%;
+		margin-left: -35%;
+	}
+	.contSocial__Obama-container{
+		position: static;
+		width: 100%;
+		margin-top: -25%;
+	}
+	.contSocial__Obama-parag{
+		font-size: 1.3rem;
+	}
+}
+@media(max-width: 450px){
+	.contSocial__Obama-img{
+		width: 120%;
+		margin-left: -35%;
+	}
 }
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo Encouraging >>>>>>>>>>>>>>>>>>>*/
 .contEncouraging{
@@ -254,6 +341,45 @@ html{
 	-webkit-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 }
+@media(max-width: 768px){
+	.contEncouraging{
+		padding: 7rem 10%;
+		overflow: hidden;
+	}
+	.contEncouraging-title{
+		font-size: 1.9rem;
+	}
+	.contEncouraging-container{
+		flex-direction: column;
+	}
+	.contEncouraging-container__item{
+		height: 37vh;
+	}
+	.contEncouraging-container__item-img{
+		width: 200px;
+		margin-left: -20%;
+	}
+	.contEncouraging-container__item--text{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: -4rem;
+	}
+	.contEncouraging-container__item-title{
+		width: 65%;
+	}
+	.contEncouraging-container__item-subtitle{
+		width: 65%;
+	}
+	.contEncouraging-container__item-parag{
+		font-size: 1rem;
+	}
+}
+@media(max-width: 450px){
+	.contEncouraging-container__item{
+		height: 52vh;
+	}
+}
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo Estudio >>>>>>>>>>>>>>>>>>>*/
 .contEstudio{
 	width: 100%;
@@ -302,6 +428,56 @@ html{
 	font-family: "usualRegular",sans-serif;
 	line-height: 1.8;
 }
+.contEstudio-Mobile{
+	display: none;
+	width: 100%;
+	padding: 0 10%;
+	overflow: hidden;
+}
+.contEstudio-Mobile__text{
+	margin: 3rem 0;
+	font-size: 1rem;
+	font-family: "usualRegular",sans-serif;
+	line-height: 1.8;
+}
+.contEstudio-Mobile__photo{
+	width: 100%;
+	margin-left: 25%;
+}
+.contEstudio-Mobile__box{
+	position: relative;
+	width: 100%;
+	margin-top: -6rem;
+	padding: 2rem;
+	background: #fff;
+	z-index: 1;
+}
+.contEstudio-Mobile__box-title{
+	font-size: 1.4rem;
+	font-family: "usualBold",sans-serif;
+	line-height: 1.8;
+	color: #FF611E;
+}
+.contEstudio-Mobile__box-parag{
+	margin-top: 2rem;
+	font-family: "sourceRegular", sans-serif;
+	font-size: .8rem;
+	color: #626262;
+}
+@media(max-width: 768px){
+	.contEstudio{
+		padding: 2rem 10%;
+	}
+	.contEstudio__container{
+		display: none;
+	}
+	.contEstudio__text{
+		display: none;
+	}
+	.contEstudio-Mobile{
+		display: block;
+	}
+}
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo Projects >>>>>>>>>>>>>>>>>>>*/
 .contProject{
 	width: 100%;
@@ -333,6 +509,20 @@ html{
 	font-family: "usualRegular",sans-serif;
 	line-height: 1.8;
 }
+@media(max-width: 768px){
+	.contProject{
+		padding: 5rem 10%;
+	}
+	.contProject-container__item{
+		width: 100%;
+	}
+	.contProject-container__item--text{
+		height: 30vh;
+	}
+	.contProject-container__item-parag{
+		font-size: 1rem;
+	}
+}
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo News >>>>>>>>>>>>>>>>>>>*/
 .contNews{
 	width: 100%;
@@ -356,6 +546,18 @@ html{
 	font-family: "usualRegular",sans-serif;
 	line-height: 1.8;
 	color: #00145D;
+}
+@media(max-width: 768px){
+	.contNews{
+		width: 100%;
+		padding: 5rem 10%;
+	}
+	.contNews__container{
+		margin: 0;
+	}
+	.contNews__container-item{
+		width: 100%;
+	}
 }
 /*>>>>>>>>>>>>>>>>>>> Footer > roda pé  Social >>>>>>>>>>>>>>>>>>>*/
 .rodape{
