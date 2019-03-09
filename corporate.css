@@ -76,7 +76,7 @@ html{
 	align-items: center;
 	background: #F7F7F7;
 	width: 100%;
-	height: 10vh;
+	height: 11vh;
 	padding: 0 5rem;
 	z-index: 9;
 }
@@ -92,7 +92,7 @@ html{
 	border-bottom:  solid #FF611E 2px;
 }
 .navBar__homeLogo{
-	width: 100px;
+	width: 90px;
 }
 @media(max-width: 768px){
 	.navBar__home{
@@ -350,19 +350,24 @@ html{
 .setas{
 	width: 100%;
 }
+.pipeline__mobile{
+	display: none;
+	width: 100%;
+}
 
 @media(max-width: 768px){
 	.pipeline{
 		height: auto;
+		padding: 3rem;
+	}
+	.pipeline-title{
+		display: none;
 	}
 	.pipeline-container{
-		flex-direction: column;
+		display: none;
 	}
-	.contSetas{
-		flex-direction: row;
-	}
-	.setas{
-		transform: rotate(90deg);
+	.pipeline__mobile{
+		display: block;
 	}
 }
 /*>>>>>>>>>>>>>>>>>>> Main > Conteudo  EdTech  Visionário >>>>>>>>>>>>>>>>>>>

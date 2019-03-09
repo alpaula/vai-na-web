@@ -98,7 +98,7 @@ html{
 	align-items: center;
 	background: #F7F7F7;
 	width: 100%;
-	height: 10vh;
+	height: 11vh;
 	padding: 0 5rem;
 	z-index: 9;
 }
@@ -114,7 +114,7 @@ html{
 	border-bottom:  solid #FF611E 2px;
 }
 .navBar__homeLogo{
-	width: 100px;
+	width: 90px;
 }
 @media(max-width: 768px){
 	.navBar__home{
@@ -153,11 +153,11 @@ html{
 }
 @media(max-width: 980px){
 	.novoJogo__title{
-			font-size: 2em;
-			margin-right: 13%;
+		font-size: 2em;
+		margin-right: 13%;
 	}
 	.novoJogo__parag{
-			width: 100%;
+		width: 100%;
 	}
 }
 /*>>>>>>>>>>>>>>>>>>> sobre > contedudo primario >>>>>>>>>>>>>>>>>>>*/
