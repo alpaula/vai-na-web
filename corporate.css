@@ -321,7 +321,7 @@ html{
 .jornada__container{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-end;
 	width: 40%;
 	height: 80%;
@@ -331,7 +331,6 @@ html{
 	color: #fff;
 	font-size: 2.5rem;
 	font-family: "usualBold",sans-serif;
-	text-align: center;
 }
 .jornada__container-parag{
 	width: 85%;
