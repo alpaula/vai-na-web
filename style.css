@@ -34,8 +34,7 @@ body{
 html{
 	scroll-behavior: smooth;
 }
-/*>>>>>>>>>>>>>>>>>>> home >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> home >>>>>>>>>>>>>>>>>>>*/
 .containerLogo__home{
 	position: relative;
 	display: flex;
@@ -90,8 +89,7 @@ html{
 		font-family: "usualBold",sans-serif;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> menu > home >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> menu > home >>>>>>>>>>>>>>>>>>>*/
 .navBar__home{
 	position: sticky;
 	top: 0;
@@ -123,8 +121,7 @@ html{
 			display: none;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> sobre > um novo jogo >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> sobre > um novo jogo >>>>>>>>>>>>>>>>>>>*/
 .contPrimeiro__novoJogo{
 	display: flex;
 	justify-content:center;
@@ -163,8 +160,7 @@ html{
 			width: 100%;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> sobre > contedudo primario >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo primario >>>>>>>>>>>>>>>>>>>*/
 .contPrimeiro__profissionais{
 	display: flex;
 	align-items: flex-end;
@@ -173,8 +169,6 @@ html{
 	height: 91vh;
 	padding-left: 5rem;
 	padding-bottom: 4rem;
-}
-.profissionais_cont{
 }
 .profissionais__text{
 	width: 690px;
@@ -187,7 +181,6 @@ html{
 .profissionais__alter{
 	font-family: "usualLight",sans-serif;
 }
-
 .contProfissionais__text{
 	background-color:#F7F7F7;
 	width: 514px;
@@ -239,8 +232,7 @@ html{
 			display: none;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> sobre > contedudo secudario trabalho incluisivo >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo secudario trabalho incluisivo >>>>>>>>>>>>>>>>>>>*/
 .conteudosPrincipais__trabalho{
 	display: flex;
 	flex-direction: column;
@@ -347,8 +339,7 @@ html{
 		right: 0;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  terciario global goals >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  terciario global goals >>>>>>>>>>>>>>>>>>>*/
 .contGlobal__goals{
 	display: flex;
 	justify-content: center;
@@ -415,8 +406,7 @@ hr{
 			width: 100%;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  Organisation >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  Organisation >>>>>>>>>>>>>>>>>>>*/
 .contOrganization{
 	display: flex;
 	justify-content: center;
@@ -458,11 +448,9 @@ hr{
 	text-decoration: none;
 	cursor: pointer;
 }
-
 .button-social{ 
 	margin-left: 17%;
 }
-
 .contOrganization p{
 	position: relative;
 	background: #ffff;
@@ -509,7 +497,6 @@ hr{
 		order: 1;
 		width: 100%;
 	}
-
 	.contOrganization__social h1{
 		order: 1;
 		margin: 2rem 0;
@@ -519,30 +506,27 @@ hr{
 		order: 1;
 		width: 100%;
 	}
-
 	.organizationCorporate__img{
 		width: 100%;
 	}
 	.contOrganization{
 		flex-direction: column;
 	}
-
 	.contOrganization p{
 		position: static;
 		padding: 0 10%;
 		background-color: transparent;
 	}
 	.contOrganization__corporate{
-			width: 100%;
-			margin: 0;
+		width: 100%;
+		margin: 0;
 	}
 	.contOrganization__social{
-			width: 100%;
-			margin: 0;
+		width: 100%;
+		margin: 0;
 	}
 }
-/*>>>>>>>>>>>>>>>>>>> Footer > roda pé >>>>>>>>>>>>>>>>>>>
-*/
+/*>>>>>>>>>>>>>>>>>>> Footer > roda pé >>>>>>>>>>>>>>>>>>>*/
 .rodape{
 	background-color: #00145D;
 	margin-top: 15%;
@@ -561,16 +545,13 @@ hr{
 .rodape_section{
 	width: 15%;
 }
-
 .rodape_section1{
 	width: 30%;
 }
-
 .rodape-text{
 	font-family:"sourceBold", sans-serif;
 	color: #fff;
 }
-
 .rodape__Menu{
 	display: flex;
 	flex-direction: column;
