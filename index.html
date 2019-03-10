@@ -12,15 +12,14 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body id="4ri">
+<body id="4ri" onload="lang()">
 	<header>
 		<img class="header__logoMobile" src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
 		<img src="./Assets/menu.svg" class="header__menuMobile" onclick="openMenu()" />
 		<div id="logo" class="containerLogo__home">
 			<div class="containerLogo__title">
-				<h1 class="logoHome__title">
-					Capacite a força de trabalho e lidere a mudança
-				</h1>
+				<h1 id="home__title-portuguese" class="logoHome__title">Capacite a força de trabalho e lidere a mudança</h1>
+				<h1 id="home__title-english" class="logoHome__title">Empower the workforce and lead change</h1>
 			</div>
 		</div>
 	</header>
@@ -28,22 +27,27 @@
 		<img class="header__logoMobile" src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
 		<img src="./Assets/close.svg" class="navBar__MenuMobile-close" onclick="closeMenu()" />
 		<ul class="navBar__MenuMobile">
-			<a class="navBar__MenuMobile-item" href="#4ri" onclick="closeMenu()">4ª Rev. Industrial</a>
+			<a id="4riMob-portuguese" class="navBar__MenuMobile-item" href="#4ri" onclick="closeMenu()">4ª Rev. Industrial</a>
+			<a id="4riMob-english" class="navBar__MenuMobile-item" href="#4ri" onclick="closeMenu()">4th Industrial Rev</a>
 			<a class="navBar__MenuMobile-item" href="./corporateEdTech.html" onclick="closeMenu()">EdTech</a>
 			<a class="navBar__MenuMobile-item" href="./socialEdTech.html" onclick="closeMenu()">SocialTech</a>
-			<a class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contato</a>
-			<p class="navBar__MenuMobile-text" onclick="closeMenu()">English</p>
+			<a id="contactMob-portuguese" class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contato</a>
+			<a id="contactMob-english" class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contact</a>
+			<p id="langMob-portuguese" class="navBar__MenuMobile-text" onclick="changeLanguageClick()">English</p>
+			<p id="langMob-english" class="navBar__MenuMobile-text" onclick="changeLanguageClick()">Português</p>
 		</ul>
 	</section>
 	<nav id="menuHeader" class="navBar__home" display="none">
 		<img src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="navBar__homeLogo sticky" />
 		<ul class="navBar__Menu">
-			<a class="navBar__Menu-item" href="#4ri">4RI</a>
+			<a id="4ri-portuguese" class="navBar__Menu-item" href="#4ri">4RI</a>
+			<a id="4ri-english" class="navBar__Menu-item" href="#4ri">4IR</a>
 			<a class="navBar__Menu-item" href="./corporateEdTech.html">EdTech</a>
 			<a class="navBar__Menu-item" href="./socialEdTech.html">SocialTech</a>
-			<a class="navBar__Menu-item" href="#contact">Contato</a>
-			<p class="navBar__Menu-text">English</p>
-			<p class="navBar__Menu-text">Português</p>
+			<a id="contact-portuguese" class="navBar__Menu-item" href="#contact">Contato</a>
+			<a id="contact-english" class="navBar__Menu-item" href="#contact">Contact</a>
+			<p id="lang-portuguese" class="navBar__Menu-text" onclick="changeLanguageClick()">English</p>
+			<p id="lang-english" class="navBar__Menu-text" onclick="changeLanguageClick()">Português</p>
 		</ul>
 	</nav>
 	<main>
@@ -200,6 +204,7 @@
 		</div>
 	</footer>
 	<script src="./javascript/script.js"></script>
+	<script src="./javascript/languageHome.js"></script>
 </body>
 
 </html>
