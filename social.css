@@ -49,6 +49,14 @@ html{
 	left: 1rem;
 	z-index: 3;
 }
+.header__menuMobile{
+	position: absolute;
+	display: none;
+	top: 1rem;
+	right: 1rem;
+	font-size: 55px;
+	z-index: 3;
+}
 .logoEdtech__title{
 	color: #fff;
 	font-size: 7.5rem;
@@ -57,6 +65,9 @@ html{
 }
 @media(max-width: 768px){
 	.header__logoMobile{
+		display: block;
+	}
+	.header__menuMobile{
 		display: block;
 	}
 	.logoEdtech__title{
@@ -85,19 +96,67 @@ html{
 	padding: 0 5rem;
 	z-index: 9;
 }
-.navBar__Menu a{
+.navBar__Menu{
+	display: flex;
+	align-items: center;
+}
+.navBar__Menu-item{
 	font-family:"sourceRegular", sans-serif;
 	text-decoration: none;
 	color: #000000;
-	width: 100%;
 	margin: 20px;
 }
-.navBar__Menu a:hover{
+.navBar__Menu-item:hover{
 	font-family:"sourceBold", sans-serif;
 	border-bottom:  solid #FF611E 2px;
 }
-.navBar__homeLogo{
-	width: 90px;
+.navBar__Menu-text{
+	font-family:"sourceRegular", sans-serif;
+	color: #000000;
+	margin: 20px;
+}
+.navBar__Menu-text:hover{
+	font-family:"sourceBold", sans-serif;
+	border-bottom:  solid #FF611E 2px;
+}
+.menu-mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #E8E8E8;
+	z-index: 5;
+}
+.navBar__MenuMobile-close{
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	font-size: 45px;
+}
+.navBar__MenuMobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1.5rem;
+}
+.navBar__MenuMobile-item{
+	margin: .75rem 0;
+	font-size: 25px;
+	font-family:"sourceBold", sans-serif;
+	color: #00145D;
+	text-decoration: none;
+	text-align: center;
+}
+.navBar__MenuMobile-text{
+	margin-top: 3rem;
+	font-size: 25px;
+	font-family:"sourceRegular", sans-serif;
+	color: #00145D;
 }
 @media(max-width: 768px){
 	.navBar__home{
@@ -249,6 +308,7 @@ html{
 		position: static;
 		width: 100%;
 		margin-top: -25%;
+		z-index: 1;
 	}
 	.contSocial__Obama-parag{
 		font-size: 1.3rem;

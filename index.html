@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./Assets/Logo-VnW.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./fonts.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,7 +15,8 @@
 
 <body id="4ri">
 	<header>
-		<img src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="header__logoMobile" />
+		<img class="header__logoMobile" src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
+		<i class="header__menuMobile material-icons" onclick="openMenu()">menu</i>
 		<div id="logo" class="containerLogo__home">
 			<div class="containerLogo__title">
 				<h1 class="logoHome__title">
@@ -23,24 +25,36 @@
 			</div>
 		</div>
 	</header>
+	<section id="menu-mobile" class="menu-mobile">
+		<img class="header__logoMobile" src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
+		<i class="navBar__MenuMobile-close material-icons" onclick="closeMenu()">close</i>
+		<ul class="navBar__MenuMobile">
+			<a class="navBar__MenuMobile-item" href="#4ri" onclick="closeMenu()">4ª Rev. Industrial</a>
+			<a class="navBar__MenuMobile-item" href="./corporateEdTech.html" onclick="closeMenu()">EdTech</a>
+			<a class="navBar__MenuMobile-item" href="./socialEdTech.html" onclick="closeMenu()">SocialTech</a>
+			<a class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contato</a>
+			<p class="navBar__MenuMobile-text" onclick="closeMenu()">English</p>
+		</ul>
+	</section>
 	<nav id="menuHeader" class="navBar__home" display="none">
 		<img src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="navBar__homeLogo sticky" />
-		<ul class="navBar__Menu ">
-			<a href="#4ri">4RI</a>
-			<a href="./corporateEdTech.html">EdTech</a>
-			<a href="./socialEdTech.html">SocialTech</a>
-			<a href="#contact">Contato</a>
-			<a href="./En/indexEn.html">English</a>
+		<ul class="navBar__Menu">
+			<a class="navBar__Menu-item" href="#4ri">4RI</a>
+			<a class="navBar__Menu-item" href="./corporateEdTech.html">EdTech</a>
+			<a class="navBar__Menu-item" href="./socialEdTech.html">SocialTech</a>
+			<a class="navBar__Menu-item" href="#contact">Contato</a>
+			<p class="navBar__Menu-text">English</p>
+			<p class="navBar__Menu-text">Português</p>
 		</ul>
 	</nav>
 	<main>
 		<section class="conteudosPrincipais__primario">
 			<div class="contPrimeiro__novoJogo">
-				<h1 class="novoJogo__title" data-aos="fade" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+				<h1 class="novoJogo__title">
 					Um novo jogo
 				</h1>
 				<div class="contNovoJogo__parag">
-					<p class="novoJogo__parag" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
+					<p class="novoJogo__parag">
 						A quarta revolução industrial, potencializada pela inteligência artificial, big data, impressão 3D e
 						internet das coisas (IoT), citando algumas, traz desafios fascinantes e muda fundamentalmente a forma como
 						vivemos, trabalhos e interagimos. Conforme industrias inteiras se ajustam, a maioria das ocupações passa por
@@ -76,7 +90,7 @@
 			</div>
 		</section>
 		<section class="conteudosPrincipais__trabalho">
-			<h1 class="diversiade__title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+			<h1 class="diversiade__title">
 				— Força de trabalho inclusiva e qualificada <br> traz oportunidades e abundância
 			</h1>
 			<div class="contForca__trabalho">
@@ -106,10 +120,9 @@
 		</section>
 		<section class="contGlobal__goals">
 			<div class="contglobalgoals__text">
-				<h1 class="globalGoals__title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">Global Goals
-				</h1>
+				<h1 class="globalGoals__title">Global Goals</h1>
 				<hr>
-				<p class="globalGoals__parag" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<p class="globalGoals__parag">
 					O Vai na Web contribui diretamentamente com 12 dos 17 Objetivos do Desenvolvimento Sustentável.
 					Invista em um programa de treinamento que esteja alinhado com suas metas de responsabilidade social e cultura
 					corporativa.
@@ -124,27 +137,27 @@
 		</section>
 		<section class="contOrganization">
 			<div class="contOrganization__corporate">
-				<h1 class="contOrganization__title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">Corporate EdTech</h1>
+				<h1 class="contOrganization__title">Corporate EdTech</h1>
 				<img src="./Assets/Home-Coporate_edtech.jpg" alt="" class="organizationCorporate__img">
-				<p class="organizationCorporate__parag" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
+				<p class="organizationCorporate__parag">
 					Com foco na tecnologia, diversidade e na adaptação do mercado para nova Indústria, desenvolvemos o Corporate
 					EdTech.
 					O nosso programa promove o pensamento digital, permitindo que os profissionais estejam preparados para as
 					rápidas mudanças do mercado e sejam capazes de liderarem ações em novos cenários.
 				</p>
-				<a class="button" href="./corporateEdTech.html" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="button" href="./corporateEdTech.html">
 					DESENVOLVA NA SUA ORGANIZAÇÃO
 				</a>
 			</div>
 			<div class="contOrganization__social">
-				<h1 class="contOrganization__title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">Social EdTech</h1>
+				<h1 class="contOrganization__title">Social EdTech</h1>
 				<img src="./Assets/Home-Social_edtech.jpg" alt="" class="organizationCorporate__img" />
-				<p class="organizationSocial__parag" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
+				<p class="organizationSocial__parag">
 					Ao aderir a um de nossos programas, a sua empresa irá fornecer oportunidade para jovens, moradores de em zona
 					de conflito no Rio de Janeiro, prosperarem. Centenas de vidas e carreiras já foram potencializadas com o Vai
 					na Web Social Tech, que tem como propósito tornar a tecnologia acessível e inclusiva.
 				</p>
-				<a class="button button-social" href="./socialEdTech.html" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000">
+				<a class="button button-social" href="./socialEdTech.html">
 					CONHEÇA A NOSSA HISTÓRIA
 				</a>
 			</div>

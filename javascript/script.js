@@ -48,6 +48,18 @@ function showProjects(n){
   x[slidesProjects-1].style.display = "flex";
 };
 
+function openMenu(){
+  var menu = document.getElementById("menu-mobile");
+
+  menu.style.display = 'flex';
+}
+
+function closeMenu(){
+  var menu = document.getElementById("menu-mobile");
+
+  menu.style.display = "none";
+}
+
 // function lang(){
  
 //     if((navigator.language) === 'pt-BR'){
