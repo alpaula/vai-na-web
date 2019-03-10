@@ -53,9 +53,9 @@ html{
 .header__menuMobile{
 	position: absolute;
 	display: none;
-	top: 1rem;
-	right: 1rem;
-	font-size: 55px;
+	top: 2rem;
+	right: 2rem;
+	width: 13%;
 	z-index: 3;
 }
 .logoEdtech__title{
@@ -134,7 +134,7 @@ html{
 	position: absolute;
 	top: 1.5rem;
 	right: 1.5rem;
-	font-size: 45px;
+	width: 15%;
 }
 .navBar__MenuMobile{
 	display: flex;
