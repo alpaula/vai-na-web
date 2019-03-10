@@ -558,6 +558,7 @@ html{
 	font-family:"sourceRegular", sans-serif;
 	color: #fff;
 	text-decoration: none;
+	text-transform: uppercase;
 	cursor: pointer;
 }
 .jornada__container-button:hover{
